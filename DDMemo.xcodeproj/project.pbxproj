@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87C70FAE4B4E5E8038903CDC /* libPods-DDMemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2591813F1161428E98B66CAC /* libPods-DDMemo.a */; };
+		FB702D3820AE6BA1000E575B /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D2F20AE6BA1000E575B /* HomeController.m */; };
+		FB702D3920AE6BA1000E575B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D3420AE6BA1000E575B /* BaseViewController.m */; };
+		FB702D3A20AE6BA1000E575B /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D3620AE6BA1000E575B /* BaseNavController.m */; };
+		FB702D3F20AE7B0B000E575B /* DDCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D3E20AE7B0B000E575B /* DDCalendarAppearance.m */; };
+		FB702D4320AE7F53000E575B /* DDCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D4220AE7F53000E575B /* DDCalendarManager.m */; };
+		FB702D4620AE7F83000E575B /* DDCalendarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D4520AE7F83000E575B /* DDCalendarScrollView.m */; };
+		FB702D4920AE7FA2000E575B /* DDCalendarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D4820AE7FA2000E575B /* DDCalendarContentView.m */; };
+		FB702D4C20AE7FC4000E575B /* DDCalendarCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D4B20AE7FC4000E575B /* DDCalendarCollectionViewFlowLayout.m */; };
+		FB702D4F20AE7FEE000E575B /* DDCalendarCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D4E20AE7FEE000E575B /* DDCalendarCollectionCell.m */; };
+		FB702D5220AE8006000E575B /* DDCalendarDayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D5120AE8006000E575B /* DDCalendarDayItem.m */; };
+		FB702D5520AE80AD000E575B /* DDCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D5420AE80AD000E575B /* DDCalendarWeekDayView.m */; };
+		FB702D5820AE8453000E575B /* DDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D5720AE8453000E575B /* DDCircleView.m */; };
 		FBF12DA320AD90B1006194C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF12DA220AD90B1006194C6 /* AppDelegate.m */; };
-		FBF12DA620AD90B1006194C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF12DA520AD90B1006194C6 /* ViewController.m */; };
 		FBF12DA920AD90B1006194C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF12DA720AD90B1006194C6 /* Main.storyboard */; };
 		FBF12DAC20AD90B1006194C6 /* DDMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBF12DAA20AD90B1006194C6 /* DDMemo.xcdatamodeld */; };
 		FBF12DAE20AD90B1006194C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF12DAD20AD90B1006194C6 /* Assets.xcassets */; };
@@ -17,11 +29,38 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E310246520CF9CC39468F27 /* Pods-DDMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo.release.xcconfig"; sourceTree = "<group>"; };
+		2591813F1161428E98B66CAC /* libPods-DDMemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDMemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87CFA456EA7A0EAF805F15A /* Pods-DDMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FB702D2F20AE6BA1000E575B /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		FB702D3020AE6BA1000E575B /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		FB702D3420AE6BA1000E575B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FB702D3520AE6BA1000E575B /* BaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavController.h; sourceTree = "<group>"; };
+		FB702D3620AE6BA1000E575B /* BaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavController.m; sourceTree = "<group>"; };
+		FB702D3720AE6BA1000E575B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FB702D3D20AE7B0B000E575B /* DDCalendarAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarAppearance.h; sourceTree = "<group>"; };
+		FB702D3E20AE7B0B000E575B /* DDCalendarAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCalendarAppearance.m; sourceTree = "<group>"; };
+		FB702D4020AE7F2D000E575B /* DDCalendarEventSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarEventSource.h; sourceTree = "<group>"; };
+		FB702D4120AE7F53000E575B /* DDCalendarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarManager.h; sourceTree = "<group>"; };
+		FB702D4220AE7F53000E575B /* DDCalendarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCalendarManager.m; sourceTree = "<group>"; };
+		FB702D4420AE7F83000E575B /* DDCalendarScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarScrollView.h; sourceTree = "<group>"; };
+		FB702D4520AE7F83000E575B /* DDCalendarScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCalendarScrollView.m; sourceTree = "<group>"; };
+		FB702D4720AE7FA2000E575B /* DDCalendarContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarContentView.h; sourceTree = "<group>"; };
+		FB702D4820AE7FA2000E575B /* DDCalendarContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCalendarContentView.m; sourceTree = "<group>"; };
+		FB702D4A20AE7FC4000E575B /* DDCalendarCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		FB702D4B20AE7FC4000E575B /* DDCalendarCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCalendarCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		FB702D4D20AE7FEE000E575B /* DDCalendarCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarCollectionCell.h; sourceTree = "<group>"; };
+		FB702D4E20AE7FEE000E575B /* DDCalendarCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCalendarCollectionCell.m; sourceTree = "<group>"; };
+		FB702D5020AE8006000E575B /* DDCalendarDayItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarDayItem.h; sourceTree = "<group>"; };
+		FB702D5120AE8006000E575B /* DDCalendarDayItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCalendarDayItem.m; sourceTree = "<group>"; };
+		FB702D5320AE80AD000E575B /* DDCalendarWeekDayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCalendarWeekDayView.h; sourceTree = "<group>"; };
+		FB702D5420AE80AD000E575B /* DDCalendarWeekDayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCalendarWeekDayView.m; sourceTree = "<group>"; };
+		FB702D5620AE8453000E575B /* DDCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCircleView.h; sourceTree = "<group>"; };
+		FB702D5720AE8453000E575B /* DDCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCircleView.m; sourceTree = "<group>"; };
+		FB702D5920AE8C1F000E575B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FBF12D9E20AD90B0006194C6 /* DDMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF12DA120AD90B0006194C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBF12DA220AD90B1006194C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FBF12DA420AD90B1006194C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FBF12DA520AD90B1006194C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FBF12DA820AD90B1006194C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBF12DAB20AD90B1006194C6 /* DDMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DDMemo.xcdatamodel; sourceTree = "<group>"; };
 		FBF12DAD20AD90B1006194C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,17 +74,150 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C70FAE4B4E5E8038903CDC /* libPods-DDMemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C5B4DEA29162B816FCDD80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D87CFA456EA7A0EAF805F15A /* Pods-DDMemo.debug.xcconfig */,
+				0E310246520CF9CC39468F27 /* Pods-DDMemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D384E2BCBD79EDFB0EBE7E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2591813F1161428E98B66CAC /* libPods-DDMemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB702D2920AE6BA1000E575B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FB702D2A20AE6BA1000E575B /* Other */,
+				FB702D2E20AE6BA1000E575B /* Controller */,
+				FB702D3120AE6BA1000E575B /* Model */,
+				FB702D3220AE6BA1000E575B /* View */,
+				FB702D3320AE6BA1000E575B /* Base */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FB702D2A20AE6BA1000E575B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FB702D3B20AE7951000E575B /* Custom */,
+				FB702D2B20AE6BA1000E575B /* Category */,
+				FB702D2C20AE6BA1000E575B /* Util */,
+				FB702D2D20AE6BA1000E575B /* Macro */,
+				FB702D5920AE8C1F000E575B /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FB702D2B20AE6BA1000E575B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FB702D2C20AE6BA1000E575B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FB702D2D20AE6BA1000E575B /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		FB702D2E20AE6BA1000E575B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB702D2F20AE6BA1000E575B /* HomeController.m */,
+				FB702D3020AE6BA1000E575B /* HomeController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB702D3120AE6BA1000E575B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB702D3220AE6BA1000E575B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB702D3320AE6BA1000E575B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FB702D3420AE6BA1000E575B /* BaseViewController.m */,
+				FB702D3520AE6BA1000E575B /* BaseNavController.h */,
+				FB702D3620AE6BA1000E575B /* BaseNavController.m */,
+				FB702D3720AE6BA1000E575B /* BaseViewController.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FB702D3B20AE7951000E575B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FB702D3C20AE7969000E575B /* DDCalendar */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		FB702D3C20AE7969000E575B /* DDCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				FB702D4020AE7F2D000E575B /* DDCalendarEventSource.h */,
+				FB702D3D20AE7B0B000E575B /* DDCalendarAppearance.h */,
+				FB702D3E20AE7B0B000E575B /* DDCalendarAppearance.m */,
+				FB702D4120AE7F53000E575B /* DDCalendarManager.h */,
+				FB702D4220AE7F53000E575B /* DDCalendarManager.m */,
+				FB702D4420AE7F83000E575B /* DDCalendarScrollView.h */,
+				FB702D4520AE7F83000E575B /* DDCalendarScrollView.m */,
+				FB702D4720AE7FA2000E575B /* DDCalendarContentView.h */,
+				FB702D4820AE7FA2000E575B /* DDCalendarContentView.m */,
+				FB702D4A20AE7FC4000E575B /* DDCalendarCollectionViewFlowLayout.h */,
+				FB702D4B20AE7FC4000E575B /* DDCalendarCollectionViewFlowLayout.m */,
+				FB702D4D20AE7FEE000E575B /* DDCalendarCollectionCell.h */,
+				FB702D4E20AE7FEE000E575B /* DDCalendarCollectionCell.m */,
+				FB702D5020AE8006000E575B /* DDCalendarDayItem.h */,
+				FB702D5120AE8006000E575B /* DDCalendarDayItem.m */,
+				FB702D5320AE80AD000E575B /* DDCalendarWeekDayView.h */,
+				FB702D5420AE80AD000E575B /* DDCalendarWeekDayView.m */,
+				FB702D5620AE8453000E575B /* DDCircleView.h */,
+				FB702D5720AE8453000E575B /* DDCircleView.m */,
+			);
+			path = DDCalendar;
+			sourceTree = "<group>";
+		};
 		FBF12D9520AD90B0006194C6 = {
 			isa = PBXGroup;
 			children = (
 				FBF12DA020AD90B0006194C6 /* DDMemo */,
 				FBF12D9F20AD90B0006194C6 /* Products */,
+				12C5B4DEA29162B816FCDD80 /* Pods */,
+				5D384E2BCBD79EDFB0EBE7E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +232,9 @@
 		FBF12DA020AD90B0006194C6 /* DDMemo */ = {
 			isa = PBXGroup;
 			children = (
+				FB702D2920AE6BA1000E575B /* Classes */,
 				FBF12DA120AD90B0006194C6 /* AppDelegate.h */,
 				FBF12DA220AD90B1006194C6 /* AppDelegate.m */,
-				FBF12DA420AD90B1006194C6 /* ViewController.h */,
-				FBF12DA520AD90B1006194C6 /* ViewController.m */,
 				FBF12DA720AD90B1006194C6 /* Main.storyboard */,
 				FBF12DAD20AD90B1006194C6 /* Assets.xcassets */,
 				FBF12DAF20AD90B1006194C6 /* LaunchScreen.storyboard */,
@@ -81,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF12DB720AD90B1006194C6 /* Build configuration list for PBXNativeTarget "DDMemo" */;
 			buildPhases = (
+				618CFD8A2274242FBCEDBF6A /* [CP] Check Pods Manifest.lock */,
 				FBF12D9A20AD90B0006194C6 /* Sources */,
 				FBF12D9B20AD90B0006194C6 /* Frameworks */,
 				FBF12D9C20AD90B0006194C6 /* Resources */,
+				8CE0263C5BAE6CE9D1772D71 /* [CP] Embed Pods Frameworks */,
+				A1252A4EE3FE3ADE945081ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,14 +314,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		618CFD8A2274242FBCEDBF6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DDMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE0263C5BAE6CE9D1772D71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1252A4EE3FE3ADE945081ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBF12D9A20AD90B0006194C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBF12DA620AD90B1006194C6 /* ViewController.m in Sources */,
+				FB702D3820AE6BA1000E575B /* HomeController.m in Sources */,
+				FB702D3F20AE7B0B000E575B /* DDCalendarAppearance.m in Sources */,
+				FB702D4620AE7F83000E575B /* DDCalendarScrollView.m in Sources */,
+				FB702D5820AE8453000E575B /* DDCircleView.m in Sources */,
+				FB702D4F20AE7FEE000E575B /* DDCalendarCollectionCell.m in Sources */,
+				FB702D3920AE6BA1000E575B /* BaseViewController.m in Sources */,
+				FB702D4320AE7F53000E575B /* DDCalendarManager.m in Sources */,
+				FB702D3A20AE6BA1000E575B /* BaseNavController.m in Sources */,
+				FB702D5520AE80AD000E575B /* DDCalendarWeekDayView.m in Sources */,
+				FB702D4920AE7FA2000E575B /* DDCalendarContentView.m in Sources */,
 				FBF12DAC20AD90B1006194C6 /* DDMemo.xcdatamodeld in Sources */,
+				FB702D5220AE8006000E575B /* DDCalendarDayItem.m in Sources */,
 				FBF12DB420AD90B1006194C6 /* main.m in Sources */,
+				FB702D4C20AE7FC4000E575B /* DDCalendarCollectionViewFlowLayout.m in Sources */,
 				FBF12DA320AD90B1006194C6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,10 +519,12 @@
 		};
 		FBF12DB820AD90B1006194C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87CFA456EA7A0EAF805F15A /* Pods-DDMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = DDMemo/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = DDMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duodian.DDMemo;
@@ -295,10 +536,12 @@
 		};
 		FBF12DB920AD90B1006194C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E310246520CF9CC39468F27 /* Pods-DDMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = DDMemo/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = DDMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duodian.DDMemo;
