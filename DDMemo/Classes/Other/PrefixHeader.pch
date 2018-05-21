@@ -10,5 +10,8 @@
 #define PrefixHeader_pch
 
 #import <YYKit.h>
+#import "Macro.h"
+#import "NSObject+Initializtion.h"
+#import "UIView+Category.h"
 
 #endif /* PrefixHeader_pch */

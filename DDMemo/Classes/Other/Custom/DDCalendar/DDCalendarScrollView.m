@@ -8,6 +8,7 @@
 
 #import "DDCalendarScrollView.h"
 #import "DDCalendarAppearance.h"
+#import "EventCell.h"
 
 @interface DDCalendarScrollView()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UIView *line;
@@ -32,7 +33,7 @@
 - (void)initUI{
     self.delegate = self;
     self.bounces = false;
-    self.showsVerticalScrollIndicator = false;
+    self.showsVerticalScrollIndicator = NO;
     self.backgroundColor = [DDCalendarAppearance share].scrollBgcolor;
     DDCalendarContentView *calendarView = [[DDCalendarContentView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, [DDCalendarAppearance share].weekDayHeight*[DDCalendarAppearance share].weeksToDisplay)];
     calendarView.currentDate = [NSDate date];
@@ -40,14 +41,16 @@
     self.calendarView = calendarView;
     self.line = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(calendarView.frame), CGRectGetWidth(self.frame),0.5)];
     
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(calendarView.frame), CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)-CGRectGetMaxY(calendarView.frame))];
-    self.tableView.backgroundColor = self.backgroundColor;
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(10, CGRectGetMaxY(calendarView.frame), CGRectGetWidth(self.frame) - 20, CGRectGetHeight(self.frame)-CGRectGetMaxY(calendarView.frame))];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    [self.tableView registerNib:[UINib nibWithNibName:@"EventCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     self.tableView.estimatedRowHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
     self.tableView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
+    self.tableView.showsVerticalScrollIndicator = NO;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.scrollEnabled = [DDCalendarAppearance share].isShowSingleWeek;
     
     [self addSubview:self.tableView];
@@ -61,14 +64,17 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return  20;
+    return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell =[UITableViewCell new];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
-    cell.backgroundColor = [UIColor clearColor];
+    EventCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 120;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{

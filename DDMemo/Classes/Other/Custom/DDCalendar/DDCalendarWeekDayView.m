@@ -30,7 +30,7 @@ static NSArray *cacheDaysOfWeeks;
         UILabel *view = [UILabel new];
         
         view.font = [DDCalendarAppearance share].weekDayTextFont;
-        view.textColor = [DDCalendarAppearance share].weekDayTextColor;
+        view.textColor = [UIColor whiteColor];
         
         view.textAlignment = NSTextAlignmentCenter;
         view.text = day;
@@ -94,9 +94,7 @@ static NSArray *cacheDaysOfWeeks;
         x = CGRectGetMaxX(view.frame);
     }
     
-    
-    // No need to call [super layoutSubviews]
-}
+    }
 
 + (void)beforeReloadAppearance
 {
@@ -116,7 +114,7 @@ static NSArray *cacheDaysOfWeeks;
         UILabel *view = [self.subviews objectAtIndex:i];
         
         view.font = [DDCalendarAppearance share].weekDayTextFont;
-        view.textColor = [DDCalendarAppearance share].weekDayTextColor;
+        view.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
         
         view.text = [[self daysOfWeek] objectAtIndex:i];
     }

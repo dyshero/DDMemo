@@ -20,6 +20,18 @@
 		FB702D5220AE8006000E575B /* DDCalendarDayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D5120AE8006000E575B /* DDCalendarDayItem.m */; };
 		FB702D5520AE80AD000E575B /* DDCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D5420AE80AD000E575B /* DDCalendarWeekDayView.m */; };
 		FB702D5820AE8453000E575B /* DDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D5720AE8453000E575B /* DDCircleView.m */; };
+		FB702D7D20AFE99A000E575B /* AddMemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D7C20AFE99A000E575B /* AddMemoView.m */; };
+		FB702D7F20AFE9A1000E575B /* AddMemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB702D7E20AFE9A1000E575B /* AddMemoView.xib */; };
+		FB702D8220AFEB26000E575B /* NSObject+Initializtion.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D8120AFEB26000E575B /* NSObject+Initializtion.m */; };
+		FB702D8520AFEB8B000E575B /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D8420AFEB8B000E575B /* UIView+Category.m */; };
+		FB702D9820B2A2B8000E575B /* CardScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D9620B2A2B8000E575B /* CardScrollView.m */; };
+		FB702D9B20B2A58C000E575B /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D9A20B2A58C000E575B /* UIBarButtonItem+Extension.m */; };
+		FB702D9F20B2B335000E575B /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D9D20B2B335000E575B /* EventCell.m */; };
+		FB702DA020B2B335000E575B /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB702D9E20B2B335000E575B /* EventCell.xib */; };
+		FB702DE020B2BE2C000E575B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB702DDF20B2BE2C000E575B /* NotificationCenter.framework */; };
+		FB702DE420B2BE2C000E575B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702DE320B2BE2C000E575B /* TodayViewController.m */; };
+		FB702DE720B2BE2C000E575B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB702DE520B2BE2C000E575B /* MainInterface.storyboard */; };
+		FB702DEB20B2BE2C000E575B /* DDMemoWiget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB702DDE20B2BE2C000E575B /* DDMemoWiget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FBF12DA320AD90B1006194C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF12DA220AD90B1006194C6 /* AppDelegate.m */; };
 		FBF12DA920AD90B1006194C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF12DA720AD90B1006194C6 /* Main.storyboard */; };
 		FBF12DAC20AD90B1006194C6 /* DDMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBF12DAA20AD90B1006194C6 /* DDMemo.xcdatamodeld */; };
@@ -27,6 +39,30 @@
 		FBF12DB120AD90B1006194C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF12DAF20AD90B1006194C6 /* LaunchScreen.storyboard */; };
 		FBF12DB420AD90B1006194C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF12DB320AD90B1006194C6 /* main.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB702DE920B2BE2C000E575B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF12D9620AD90B0006194C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB702DDD20B2BE2C000E575B;
+			remoteInfo = DDMemoWiget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB702DEF20B2BE2C000E575B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB702DEB20B2BE2C000E575B /* DDMemoWiget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E310246520CF9CC39468F27 /* Pods-DDMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +94,27 @@
 		FB702D5620AE8453000E575B /* DDCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCircleView.h; sourceTree = "<group>"; };
 		FB702D5720AE8453000E575B /* DDCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCircleView.m; sourceTree = "<group>"; };
 		FB702D5920AE8C1F000E575B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FB702D7A20AFD008000E575B /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		FB702D7B20AFE99A000E575B /* AddMemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddMemoView.h; sourceTree = "<group>"; };
+		FB702D7C20AFE99A000E575B /* AddMemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddMemoView.m; sourceTree = "<group>"; };
+		FB702D7E20AFE9A1000E575B /* AddMemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMemoView.xib; sourceTree = "<group>"; };
+		FB702D8020AFEB26000E575B /* NSObject+Initializtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Initializtion.h"; sourceTree = "<group>"; };
+		FB702D8120AFEB26000E575B /* NSObject+Initializtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Initializtion.m"; sourceTree = "<group>"; };
+		FB702D8320AFEB8B000E575B /* UIView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		FB702D8420AFEB8B000E575B /* UIView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		FB702D9620B2A2B8000E575B /* CardScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardScrollView.m; sourceTree = "<group>"; };
+		FB702D9720B2A2B8000E575B /* CardScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardScrollView.h; sourceTree = "<group>"; };
+		FB702D9920B2A58C000E575B /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		FB702D9A20B2A58C000E575B /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		FB702D9C20B2B335000E575B /* EventCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
+		FB702D9D20B2B335000E575B /* EventCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
+		FB702D9E20B2B335000E575B /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		FB702DDE20B2BE2C000E575B /* DDMemoWiget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DDMemoWiget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB702DDF20B2BE2C000E575B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FB702DE220B2BE2C000E575B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		FB702DE320B2BE2C000E575B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		FB702DE620B2BE2C000E575B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FB702DE820B2BE2C000E575B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBF12D9E20AD90B0006194C6 /* DDMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF12DA120AD90B0006194C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBF12DA220AD90B1006194C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +127,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB702DDB20B2BE2C000E575B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB702DE020B2BE2C000E575B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBF12D9B20AD90B0006194C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				2591813F1161428E98B66CAC /* libPods-DDMemo.a */,
+				FB702DDF20B2BE2C000E575B /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,6 +179,7 @@
 		FB702D2A20AE6BA1000E575B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				FB702D8B20B29D22000E575B /* Vendor */,
 				FB702D3B20AE7951000E575B /* Custom */,
 				FB702D2B20AE6BA1000E575B /* Category */,
 				FB702D2C20AE6BA1000E575B /* Util */,
@@ -125,6 +192,12 @@
 		FB702D2B20AE6BA1000E575B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				FB702D8020AFEB26000E575B /* NSObject+Initializtion.h */,
+				FB702D8120AFEB26000E575B /* NSObject+Initializtion.m */,
+				FB702D8320AFEB8B000E575B /* UIView+Category.h */,
+				FB702D8420AFEB8B000E575B /* UIView+Category.m */,
+				FB702D9920B2A58C000E575B /* UIBarButtonItem+Extension.h */,
+				FB702D9A20B2A58C000E575B /* UIBarButtonItem+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -139,6 +212,7 @@
 		FB702D2D20AE6BA1000E575B /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				FB702D7A20AFD008000E575B /* Macro.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -162,6 +236,12 @@
 		FB702D3220AE6BA1000E575B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FB702D7B20AFE99A000E575B /* AddMemoView.h */,
+				FB702D7C20AFE99A000E575B /* AddMemoView.m */,
+				FB702D7E20AFE9A1000E575B /* AddMemoView.xib */,
+				FB702D9C20B2B335000E575B /* EventCell.h */,
+				FB702D9D20B2B335000E575B /* EventCell.m */,
+				FB702D9E20B2B335000E575B /* EventCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +260,7 @@
 		FB702D3B20AE7951000E575B /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				FB702D9520B2A2B8000E575B /* CardScrollView */,
 				FB702D3C20AE7969000E575B /* DDCalendar */,
 			);
 			path = Custom;
@@ -211,10 +292,38 @@
 			path = DDCalendar;
 			sourceTree = "<group>";
 		};
+		FB702D8B20B29D22000E575B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		FB702D9520B2A2B8000E575B /* CardScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FB702D9620B2A2B8000E575B /* CardScrollView.m */,
+				FB702D9720B2A2B8000E575B /* CardScrollView.h */,
+			);
+			path = CardScrollView;
+			sourceTree = "<group>";
+		};
+		FB702DE120B2BE2C000E575B /* DDMemoWiget */ = {
+			isa = PBXGroup;
+			children = (
+				FB702DE220B2BE2C000E575B /* TodayViewController.h */,
+				FB702DE320B2BE2C000E575B /* TodayViewController.m */,
+				FB702DE520B2BE2C000E575B /* MainInterface.storyboard */,
+				FB702DE820B2BE2C000E575B /* Info.plist */,
+			);
+			path = DDMemoWiget;
+			sourceTree = "<group>";
+		};
 		FBF12D9520AD90B0006194C6 = {
 			isa = PBXGroup;
 			children = (
 				FBF12DA020AD90B0006194C6 /* DDMemo */,
+				FB702DE120B2BE2C000E575B /* DDMemoWiget */,
 				FBF12D9F20AD90B0006194C6 /* Products */,
 				12C5B4DEA29162B816FCDD80 /* Pods */,
 				5D384E2BCBD79EDFB0EBE7E9 /* Frameworks */,
@@ -225,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				FBF12D9E20AD90B0006194C6 /* DDMemo.app */,
+				FB702DDE20B2BE2C000E575B /* DDMemoWiget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +358,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FB702DDD20B2BE2C000E575B /* DDMemoWiget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB702DEC20B2BE2C000E575B /* Build configuration list for PBXNativeTarget "DDMemoWiget" */;
+			buildPhases = (
+				FB702DDA20B2BE2C000E575B /* Sources */,
+				FB702DDB20B2BE2C000E575B /* Frameworks */,
+				FB702DDC20B2BE2C000E575B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDMemoWiget;
+			productName = DDMemoWiget;
+			productReference = FB702DDE20B2BE2C000E575B /* DDMemoWiget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FBF12D9D20AD90B0006194C6 /* DDMemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF12DB720AD90B1006194C6 /* Build configuration list for PBXNativeTarget "DDMemo" */;
@@ -258,10 +385,12 @@
 				FBF12D9C20AD90B0006194C6 /* Resources */,
 				8CE0263C5BAE6CE9D1772D71 /* [CP] Embed Pods Frameworks */,
 				A1252A4EE3FE3ADE945081ED /* [CP] Copy Pods Resources */,
+				FB702DEF20B2BE2C000E575B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FB702DEA20B2BE2C000E575B /* PBXTargetDependency */,
 			);
 			name = DDMemo;
 			productName = DDMemo;
@@ -277,6 +406,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "丁远帅";
 				TargetAttributes = {
+					FB702DDD20B2BE2C000E575B = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					FBF12D9D20AD90B0006194C6 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Manual;
@@ -297,17 +430,28 @@
 			projectRoot = "";
 			targets = (
 				FBF12D9D20AD90B0006194C6 /* DDMemo */,
+				FB702DDD20B2BE2C000E575B /* DDMemoWiget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FB702DDC20B2BE2C000E575B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB702DE720B2BE2C000E575B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBF12D9C20AD90B0006194C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FBF12DB120AD90B1006194C6 /* LaunchScreen.storyboard in Resources */,
 				FBF12DAE20AD90B1006194C6 /* Assets.xcassets in Resources */,
+				FB702D7F20AFE9A1000E575B /* AddMemoView.xib in Resources */,
+				FB702DA020B2B335000E575B /* EventCell.xib in Resources */,
 				FBF12DA920AD90B1006194C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +499,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -369,20 +514,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FB702DDA20B2BE2C000E575B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB702DE420B2BE2C000E575B /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBF12D9A20AD90B0006194C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FB702D3820AE6BA1000E575B /* HomeController.m in Sources */,
+				FB702D9F20B2B335000E575B /* EventCell.m in Sources */,
+				FB702D8220AFEB26000E575B /* NSObject+Initializtion.m in Sources */,
 				FB702D3F20AE7B0B000E575B /* DDCalendarAppearance.m in Sources */,
 				FB702D4620AE7F83000E575B /* DDCalendarScrollView.m in Sources */,
+				FB702D9B20B2A58C000E575B /* UIBarButtonItem+Extension.m in Sources */,
 				FB702D5820AE8453000E575B /* DDCircleView.m in Sources */,
 				FB702D4F20AE7FEE000E575B /* DDCalendarCollectionCell.m in Sources */,
 				FB702D3920AE6BA1000E575B /* BaseViewController.m in Sources */,
 				FB702D4320AE7F53000E575B /* DDCalendarManager.m in Sources */,
 				FB702D3A20AE6BA1000E575B /* BaseNavController.m in Sources */,
+				FB702D9820B2A2B8000E575B /* CardScrollView.m in Sources */,
 				FB702D5520AE80AD000E575B /* DDCalendarWeekDayView.m in Sources */,
+				FB702D8520AFEB8B000E575B /* UIView+Category.m in Sources */,
 				FB702D4920AE7FA2000E575B /* DDCalendarContentView.m in Sources */,
+				FB702D7D20AFE99A000E575B /* AddMemoView.m in Sources */,
 				FBF12DAC20AD90B1006194C6 /* DDMemo.xcdatamodeld in Sources */,
 				FB702D5220AE8006000E575B /* DDCalendarDayItem.m in Sources */,
 				FBF12DB420AD90B1006194C6 /* main.m in Sources */,
@@ -393,7 +552,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FB702DEA20B2BE2C000E575B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB702DDD20B2BE2C000E575B /* DDMemoWiget */;
+			targetProxy = FB702DE920B2BE2C000E575B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		FB702DE520B2BE2C000E575B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB702DE620B2BE2C000E575B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		FBF12DA720AD90B1006194C6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,6 +588,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FB702DED20B2BE2C000E575B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DDMemoWiget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dys.ddmemo.DDMemoWiget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB702DEE20B2BE2C000E575B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DDMemoWiget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dys.ddmemo.DDMemoWiget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FBF12DB520AD90B1006194C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -526,8 +729,9 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = DDMemo/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = DDMemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = duodian.DDMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dys.ddmemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,8 +747,9 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = DDMemo/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = DDMemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = duodian.DDMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dys.ddmemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -554,6 +759,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB702DEC20B2BE2C000E575B /* Build configuration list for PBXNativeTarget "DDMemoWiget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB702DED20B2BE2C000E575B /* Debug */,
+				FB702DEE20B2BE2C000E575B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FBF12D9920AD90B0006194C6 /* Build configuration list for PBXProject "DDMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -64,8 +64,8 @@
     self.dayTextColorToday = [UIColor whiteColor];
     self.dayDotColor = [UIColor redColor];
     
-    self.weekDayBgColor = [UIColor whiteColor];
-    self.calendarBgColor = [UIColor whiteColor];
+    self.weekDayBgColor = [UIColor clearColor];
+    self.calendarBgColor = [UIColor clearColor];
     self.scrollBgcolor = [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:1];
     self.isShowLunarCalender = YES;
 }

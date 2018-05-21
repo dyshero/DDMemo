@@ -40,8 +40,6 @@
     
     textLabel = [UILabel new];
     textLabel.font = [DDCalendarAppearance share].dayTextFont;
-    
-    
     textLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:textLabel];
     
@@ -211,14 +209,8 @@
         if ([self isToday]){
             
             circleView.layer.borderColor = [DDCalendarAppearance share].dayBorderColorToday.CGColor;
-            
-            
             textLabel.textColor = [DDCalendarAppearance share].dayTextColor;
             lunarTextLabel.textColor = [DDCalendarAppearance share].lunarDayTextColor;
-            
-            
-            
-            
         }
         else{
             if(!self.item.isOtherMonth ){

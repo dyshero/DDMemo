@@ -1,4 +1,5 @@
 PODS:
+  - IQKeyboardManager (5.0.7)
   - Masonry (1.1.0)
   - SVProgressHUD (2.2.5)
   - YYKit (1.0.9):
@@ -6,15 +7,17 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - IQKeyboardManager
   - Masonry
   - SVProgressHUD
   - YYKit
 
 SPEC CHECKSUMS:
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 125329b9c80ef2b954c1a00407ccb09e64b5df73
+PODFILE CHECKSUM: 49b532d4a537ceaed30cefcf8bbfd47a3a3cac54
 
 COCOAPODS: 1.3.1

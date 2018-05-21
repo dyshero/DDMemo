@@ -69,7 +69,7 @@
     self.collectionView.dataSource = self;
     self.collectionView.pagingEnabled = YES;
     self.collectionView.showsHorizontalScrollIndicator = false;
-    self.collectionView.backgroundColor =  [UIColor clearColor];
+    self.collectionView.backgroundColor = ThemeColor;
     if (@available(iOS 11.0, *)) {
         self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
@@ -110,24 +110,21 @@
 - (CGRect)obtainVisualFrame{
     return CGRectMake(0 , ([self weekOfMonthWithDate:self.currentDate]-1)*[DDCalendarAppearance share].weekDayHeight, CGRectGetWidth(self.frame), [DDCalendarAppearance share].weekDayHeight);
 }
+
 //设置可见的区域
 - (void)setUpVisualRegion{
     UIBezierPath *bpath = [UIBezierPath bezierPathWithRoundedRect:self.maskView.bounds cornerRadius:0];
-    //贝塞尔曲线 画一个圆形
-    
     [bpath appendPath:[[UIBezierPath bezierPathWithRect:[self obtainVisualFrame]] bezierPathByReversingPath]];
     
     ((CAShapeLayer *)self.maskView.layer.mask).path = bpath.CGPath;
 }
+
 #pragma mark -- UICollectionViewDataSource --
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return NUMBER_PAGES_LOADED;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    //    if ([DDCalendarAppearance share].isShowSingleWeek) {
-    //        return  7;
-    //    }
     return 7*[DDCalendarAppearance share].weeksToDisplay;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
