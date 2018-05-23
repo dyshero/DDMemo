@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
+//NSError *err = nil;
+//NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.ddmemo"];
+//containerURL = [containerURL URLByAppendingPathComponent:@"Library/Caches/ widget"];
+////    [self dddd];
 
 @interface AppDelegate ()
 
@@ -19,8 +25,8 @@
     self.window.backgroundColor = ThemeColor;
     [[UINavigationBar appearance]  setBackgroundImage:[[UIImage alloc] init] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
-    
     [self registerPush:application];
+    [SVProgressHUD setMaximumDismissTimeInterval:0.5];
     return YES;
 }
 
@@ -35,39 +41,9 @@
     }
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    [self saveContext];
-}
-
-
-#pragma mark - Core Data stack
-
-@synthesize persistentContainer = _persistentContainer;
-
-- (NSPersistentContainer *)persistentContainer {
-    @synchronized (self) {
-        if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"DDMemo"];
-            [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
-                if (error != nil) {
-                    NSLog(@"Unresolved error %@, %@", error, error.userInfo);
-                    abort();
-                }
-            }];
-        }
-    }
-    
-    return _persistentContainer;
-}
-
-#pragma mark - Core Data Saving support
-
-- (void)saveContext {
-    NSManagedObjectContext *context = self.persistentContainer.viewContext;
-    NSError *error = nil;
-    if ([context hasChanges] && ![context save:&error]) {
-        NSLog(@"Unresolved error %@, %@", error, error.userInfo);
-        abort();
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    if (application.applicationIconBadgeNumber != 0) {
+        application.applicationIconBadgeNumber = 0;
     }
 }
 

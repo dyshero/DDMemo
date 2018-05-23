@@ -493,15 +493,10 @@
                     if ([self isEqual:currentDate other:[DDCalendarAppearance share].defaultDate]) {
                         row += i;
                     }
-                    //                    if ([DDCalendarAppearance share].weeksToDisplay == 1) {
-                    //
-                    //                    }
                     self.currentSelectedIndexPath = [NSIndexPath indexPathForRow:row inSection:round(NUMBER_PAGES_LOADED / 2)];
                 }
                 beginWeekIndexPath = self.currentSelectedIndexPath;
             }
-            
-            
         }
         
         item.eventDotColor = [DDCalendarAppearance share].dayDotColor;

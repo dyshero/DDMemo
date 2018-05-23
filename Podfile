@@ -6,4 +6,5 @@ pod 'IQKeyboardManager'
 pod 'Masonry'
 pod 'SVProgressHUD'
 pod 'YYKit'
+pod 'BRPickerView'
 end

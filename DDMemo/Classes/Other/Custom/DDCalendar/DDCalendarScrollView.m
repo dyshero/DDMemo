@@ -9,9 +9,11 @@
 #import "DDCalendarScrollView.h"
 #import "DDCalendarAppearance.h"
 #import "EventCell.h"
+#import "AppDelegate.h"
 
 @interface DDCalendarScrollView()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UIView *line;
+@property (nonatomic,strong)UIImageView *noDataView;
 @end
 
 @implementation DDCalendarScrollView
@@ -59,22 +61,105 @@
     [DDCalendarAppearance share].isShowSingleWeek ? [self scrollToSingleWeek]:[self scrollToAllWeek];
 }
 
+- (void)setDataArray:(NSMutableArray *)dataArray {
+    _dataArray = dataArray;
+    if (_dataArray.count != 0) {
+        if (_noDataView) {
+            [_noDataView removeFromSuperview];
+            _noDataView = nil;
+        }
+    } else {
+        [self configNoDataView];
+    }
+    [self.tableView reloadData];
+}
+
+- (void)configNoDataView {
+    if (!_noDataView) {
+        _noDataView = [[UIImageView alloc] initWithFrame:CGRectMake((self.width - kScreenWidth*0.5)/2, 50, kScreenWidth*0.5, kScreenWidth*0.5*131/200)];
+        _noDataView.image = [UIImage imageNamed:@"no_data"];
+        [self.tableView addSubview:_noDataView];
+    }
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return _dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     EventCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.memo = _dataArray[indexPath.row];
     return cell;
 }
 
+//先要设Cell可编辑
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+//定义编辑样式
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellEditingStyleDelete;
+}
+//修改编辑按钮文字
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return @"删除";
+}
+
+//设置进入编辑状态时，Cell不会缩进
+- (BOOL)tableView: (UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
+}
+//点击删除
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    Memo *memo = _dataArray[indexPath.row];
+    [self.dataArray removeObject:memo];
+    if (self.dataArray.count == 0) {
+        [self configNoDataView];
+    }
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSFetchRequest *deleRequest = [NSFetchRequest fetchRequestWithEntityName:@"Memo"];
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"dateInterval = %lf", memo.dateInterval];
+    deleRequest.predicate = pre;
+    NSArray *deleArray = [appDelegate.context executeFetchRequest:deleRequest error:nil];
+    
+    for (Memo *memo in deleArray) {
+        [appDelegate.context deleteObject:memo];
+    }
+    
+    NSError *error = nil;
+    if ([appDelegate.context save:&error]) {
+        // 取消特定的通知
+        NSArray *notificaitons = [[UIApplication sharedApplication] scheduledLocalNotifications];
+        if (!notificaitons || notificaitons.count <= 0) {
+            return;
+        }
+        
+        for (UILocalNotification *notify in notificaitons) {
+            if ([[notify.userInfo objectForKey:@"modelId"] isEqualToString:memo.memoId])
+            {
+                [[UIApplication sharedApplication] cancelLocalNotification:notify];
+                break;
+            }
+        }
+        
+        if (self.delteMemoBlock) {
+            self.delteMemoBlock(memo);
+        }
+    } else{
+        NSLog(@"删除数据失败, %@", error);
+    }
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 120;
+    Memo *memo = _dataArray[indexPath.row];
+    CGFloat h = [memo.content heightForFont:[UIFont systemFontOfSize:12] width:kScreenWidth - 40];
+    return 110 - 14.5 + h - (memo.content.length == 0?15:0);
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{

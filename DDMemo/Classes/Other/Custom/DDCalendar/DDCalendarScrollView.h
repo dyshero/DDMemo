@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "DDCalendarContentView.h"
 #import "DDCalendarWeekDayView.h"
+#import "Memo+CoreDataProperties.h"
+typedef void(^DeleteMemoBlock)(Memo *memo);
 
 @interface DDCalendarScrollView : UIScrollView
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) DDCalendarContentView *calendarView;
 @property (nonatomic,strong) UIColor *bgColor;
+@property (nonatomic,strong) NSMutableArray *dataArray;
+@property (nonatomic,strong) DeleteMemoBlock delteMemoBlock;
 - (void)scrollToSingleWeek;
 - (void)scrollToAllWeek;
 @end

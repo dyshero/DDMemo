@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="17B48" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <entity name="Memo" representedClassName="Memo" syncable="YES" codeGenerationType="class"/>
-    <entity name="MemoDay" representedClassName="MemoDay" syncable="YES" codeGenerationType="class">
+    <entity name="Memo" representedClassName="Memo" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateInterval" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="memoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="music" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remind" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Memo" positionX="-63" positionY="-18" width="128" height="45"/>
-        <element name="MemoDay" positionX="-54" positionY="-9" width="128" height="60"/>
+        <element name="Memo" positionX="-63" positionY="-18" width="128" height="165"/>
     </elements>
 </model>

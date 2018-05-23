@@ -7,6 +7,12 @@
 //
 
 #import "EventCell.h"
+@interface EventCell()
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UIView *ringImageView;
+@end
 
 @implementation EventCell
 
@@ -15,10 +21,10 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setMemo:(Memo *)memo {
+    _titleLabel.text = memo.title;
+    _timeLabel.text = [NSString stringWithFormat:@"%@ %@",memo.date,memo.time];
+    _contentLabel.text = memo.content;
+    _ringImageView.hidden = !memo.remind;
 }
-
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Memo+CoreDataProperties.h"
 
 @interface EventCell : UITableViewCell
-
+@property (nonatomic,weak) Memo *memo;
 @end

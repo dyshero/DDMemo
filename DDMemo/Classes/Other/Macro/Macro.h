@@ -25,4 +25,5 @@
 #define DD_IS_IPHONE_X (DD_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 812.0f)
 #define DD_SafeAreaBottom (DD_IS_IPHONE_X ? 34 : 0)
 
+
 #endif /* Macro_h */

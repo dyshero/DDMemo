@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void(^AddMemoCloseBlock)();
+typedef void(^AddMemoCloseBlock)(void);
+typedef void(^SaveMemoBlock)(NSString *date);
 
 @interface AddMemoView : UIView
 @property (nonatomic,strong) AddMemoCloseBlock closeBlock;
+@property (nonatomic,strong) SaveMemoBlock saveBlock;
 @end

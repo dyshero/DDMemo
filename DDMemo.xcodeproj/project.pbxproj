@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		87C70FAE4B4E5E8038903CDC /* libPods-DDMemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2591813F1161428E98B66CAC /* libPods-DDMemo.a */; };
+		FB531C4F20B3C16E007D013B /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB531C4E20B3C16E007D013B /* NSString+Extension.m */; };
+		FB531C5F20B41693007D013B /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB531C5E20B41693007D013B /* NSDate+Extension.m */; };
+		FB531C6320B426DA007D013B /* 震耳欲聋.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C6220B426DA007D013B /* 震耳欲聋.wav */; };
+		FB531C6520B4286B007D013B /* 屋内听雨.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C6420B4286B007D013B /* 屋内听雨.wav */; };
+		FB531C6720B42892007D013B /* 萨克斯金曲.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C6620B42892007D013B /* 萨克斯金曲.wav */; };
+		FB531C6920B4289F007D013B /* 水晶音乐.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C6820B4289E007D013B /* 水晶音乐.wav */; };
+		FB531C6B20B428AC007D013B /* 超可爱.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C6A20B428AC007D013B /* 超可爱.wav */; };
+		FB531C6D20B428B9007D013B /* 人间仙境.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C6C20B428B9007D013B /* 人间仙境.wav */; };
+		FB531C6F20B428C7007D013B /* 非常有趣.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C6E20B428C7007D013B /* 非常有趣.wav */; };
+		FB531C7120B428E4007D013B /* 滴滴哒哒.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C7020B428E4007D013B /* 滴滴哒哒.wav */; };
+		FB531C7320B428F4007D013B /* 大喇叭.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C7220B428F4007D013B /* 大喇叭.wav */; };
+		FB531C7520B428FF007D013B /* 穿透力.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C7420B428FF007D013B /* 穿透力.wav */; };
+		FB531C7720B42919007D013B /* 优美口哨.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C7620B42919007D013B /* 优美口哨.wav */; };
+		FB531C7920B4292B007D013B /* 吓死寡人.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB531C7820B4292B007D013B /* 吓死寡人.wav */; };
+		FB67530820B54C8600FEBF13 /* DDMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBF12DAA20AD90B1006194C6 /* DDMemo.xcdatamodeld */; };
+		FB67531320B54E0300FEBF13 /* Memo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67530F20B54E0200FEBF13 /* Memo+CoreDataProperties.m */; };
+		FB67531420B54E0300FEBF13 /* Memo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67531220B54E0300FEBF13 /* Memo+CoreDataClass.m */; };
+		FB67531520B54F0C00FEBF13 /* Memo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67530F20B54E0200FEBF13 /* Memo+CoreDataProperties.m */; };
+		FB67531620B54F0F00FEBF13 /* Memo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67531220B54E0300FEBF13 /* Memo+CoreDataClass.m */; };
 		FB702D3820AE6BA1000E575B /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D2F20AE6BA1000E575B /* HomeController.m */; };
 		FB702D3920AE6BA1000E575B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D3420AE6BA1000E575B /* BaseViewController.m */; };
 		FB702D3A20AE6BA1000E575B /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702D3620AE6BA1000E575B /* BaseNavController.m */; };
@@ -30,7 +49,6 @@
 		FB702DA020B2B335000E575B /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB702D9E20B2B335000E575B /* EventCell.xib */; };
 		FB702DE020B2BE2C000E575B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB702DDF20B2BE2C000E575B /* NotificationCenter.framework */; };
 		FB702DE420B2BE2C000E575B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB702DE320B2BE2C000E575B /* TodayViewController.m */; };
-		FB702DE720B2BE2C000E575B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB702DE520B2BE2C000E575B /* MainInterface.storyboard */; };
 		FB702DEB20B2BE2C000E575B /* DDMemoWiget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB702DDE20B2BE2C000E575B /* DDMemoWiget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FBF12DA320AD90B1006194C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF12DA220AD90B1006194C6 /* AppDelegate.m */; };
 		FBF12DA920AD90B1006194C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF12DA720AD90B1006194C6 /* Main.storyboard */; };
@@ -68,6 +86,28 @@
 		0E310246520CF9CC39468F27 /* Pods-DDMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo.release.xcconfig"; sourceTree = "<group>"; };
 		2591813F1161428E98B66CAC /* libPods-DDMemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDMemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87CFA456EA7A0EAF805F15A /* Pods-DDMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FB531C4D20B3C16E007D013B /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		FB531C4E20B3C16E007D013B /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		FB531C5D20B41693007D013B /* NSDate+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		FB531C5E20B41693007D013B /* NSDate+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		FB531C6220B426DA007D013B /* 震耳欲聋.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "震耳欲聋.wav"; sourceTree = "<group>"; };
+		FB531C6420B4286B007D013B /* 屋内听雨.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "屋内听雨.wav"; sourceTree = "<group>"; };
+		FB531C6620B42892007D013B /* 萨克斯金曲.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "萨克斯金曲.wav"; sourceTree = "<group>"; };
+		FB531C6820B4289E007D013B /* 水晶音乐.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "水晶音乐.wav"; sourceTree = "<group>"; };
+		FB531C6A20B428AC007D013B /* 超可爱.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "超可爱.wav"; sourceTree = "<group>"; };
+		FB531C6C20B428B9007D013B /* 人间仙境.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "人间仙境.wav"; sourceTree = "<group>"; };
+		FB531C6E20B428C7007D013B /* 非常有趣.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "非常有趣.wav"; sourceTree = "<group>"; };
+		FB531C7020B428E4007D013B /* 滴滴哒哒.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "滴滴哒哒.wav"; sourceTree = "<group>"; };
+		FB531C7220B428F4007D013B /* 大喇叭.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "大喇叭.wav"; sourceTree = "<group>"; };
+		FB531C7420B428FF007D013B /* 穿透力.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "穿透力.wav"; sourceTree = "<group>"; };
+		FB531C7620B42919007D013B /* 优美口哨.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "优美口哨.wav"; sourceTree = "<group>"; };
+		FB531C7820B4292B007D013B /* 吓死寡人.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "吓死寡人.wav"; sourceTree = "<group>"; };
+		FB6752FD20B5226700FEBF13 /* DDMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DDMemo.entitlements; sourceTree = "<group>"; };
+		FB6752FE20B522CB00FEBF13 /* DDMemoWiget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DDMemoWiget.entitlements; sourceTree = "<group>"; };
+		FB67530F20B54E0200FEBF13 /* Memo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Memo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FB67531020B54E0300FEBF13 /* Memo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Memo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FB67531120B54E0300FEBF13 /* Memo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Memo+CoreDataClass.h"; sourceTree = "<group>"; };
+		FB67531220B54E0300FEBF13 /* Memo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Memo+CoreDataClass.m"; sourceTree = "<group>"; };
 		FB702D2F20AE6BA1000E575B /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		FB702D3020AE6BA1000E575B /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
 		FB702D3420AE6BA1000E575B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -113,7 +153,6 @@
 		FB702DDF20B2BE2C000E575B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		FB702DE220B2BE2C000E575B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		FB702DE320B2BE2C000E575B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		FB702DE620B2BE2C000E575B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		FB702DE820B2BE2C000E575B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBF12D9E20AD90B0006194C6 /* DDMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF12DA120AD90B0006194C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,9 +203,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB531C5020B40222007D013B /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				FB67531020B54E0300FEBF13 /* Memo+CoreDataProperties.h */,
+				FB67531120B54E0300FEBF13 /* Memo+CoreDataClass.h */,
+				FB67531220B54E0300FEBF13 /* Memo+CoreDataClass.m */,
+				FB67530F20B54E0200FEBF13 /* Memo+CoreDataProperties.m */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		FB531C6020B426D1007D013B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FB531C6120B426D1007D013B /* Sound */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FB531C6120B426D1007D013B /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				FB531C7820B4292B007D013B /* 吓死寡人.wav */,
+				FB531C7620B42919007D013B /* 优美口哨.wav */,
+				FB531C7420B428FF007D013B /* 穿透力.wav */,
+				FB531C7220B428F4007D013B /* 大喇叭.wav */,
+				FB531C7020B428E4007D013B /* 滴滴哒哒.wav */,
+				FB531C6E20B428C7007D013B /* 非常有趣.wav */,
+				FB531C6C20B428B9007D013B /* 人间仙境.wav */,
+				FB531C6A20B428AC007D013B /* 超可爱.wav */,
+				FB531C6820B4289E007D013B /* 水晶音乐.wav */,
+				FB531C6620B42892007D013B /* 萨克斯金曲.wav */,
+				FB531C6420B4286B007D013B /* 屋内听雨.wav */,
+				FB531C6220B426DA007D013B /* 震耳欲聋.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		FB702D2920AE6BA1000E575B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FB531C5020B40222007D013B /* Coredata */,
 				FB702D2A20AE6BA1000E575B /* Other */,
 				FB702D2E20AE6BA1000E575B /* Controller */,
 				FB702D3120AE6BA1000E575B /* Model */,
@@ -179,6 +257,7 @@
 		FB702D2A20AE6BA1000E575B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				FB531C6020B426D1007D013B /* Resource */,
 				FB702D8B20B29D22000E575B /* Vendor */,
 				FB702D3B20AE7951000E575B /* Custom */,
 				FB702D2B20AE6BA1000E575B /* Category */,
@@ -198,6 +277,10 @@
 				FB702D8420AFEB8B000E575B /* UIView+Category.m */,
 				FB702D9920B2A58C000E575B /* UIBarButtonItem+Extension.h */,
 				FB702D9A20B2A58C000E575B /* UIBarButtonItem+Extension.m */,
+				FB531C4D20B3C16E007D013B /* NSString+Extension.h */,
+				FB531C4E20B3C16E007D013B /* NSString+Extension.m */,
+				FB531C5D20B41693007D013B /* NSDate+Extension.h */,
+				FB531C5E20B41693007D013B /* NSDate+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -311,9 +394,9 @@
 		FB702DE120B2BE2C000E575B /* DDMemoWiget */ = {
 			isa = PBXGroup;
 			children = (
+				FB6752FE20B522CB00FEBF13 /* DDMemoWiget.entitlements */,
 				FB702DE220B2BE2C000E575B /* TodayViewController.h */,
 				FB702DE320B2BE2C000E575B /* TodayViewController.m */,
-				FB702DE520B2BE2C000E575B /* MainInterface.storyboard */,
 				FB702DE820B2BE2C000E575B /* Info.plist */,
 			);
 			path = DDMemoWiget;
@@ -342,6 +425,7 @@
 		FBF12DA020AD90B0006194C6 /* DDMemo */ = {
 			isa = PBXGroup;
 			children = (
+				FB6752FD20B5226700FEBF13 /* DDMemo.entitlements */,
 				FB702D2920AE6BA1000E575B /* Classes */,
 				FBF12DA120AD90B0006194C6 /* AppDelegate.h */,
 				FBF12DA220AD90B1006194C6 /* AppDelegate.m */,
@@ -408,11 +492,21 @@
 				TargetAttributes = {
 					FB702DDD20B2BE2C000E575B = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					FBF12D9D20AD90B0006194C6 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -440,7 +534,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB702DE720B2BE2C000E575B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,11 +541,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB531C6B20B428AC007D013B /* 超可爱.wav in Resources */,
 				FBF12DB120AD90B1006194C6 /* LaunchScreen.storyboard in Resources */,
+				FB531C6920B4289F007D013B /* 水晶音乐.wav in Resources */,
 				FBF12DAE20AD90B1006194C6 /* Assets.xcassets in Resources */,
+				FB531C6720B42892007D013B /* 萨克斯金曲.wav in Resources */,
+				FB531C7720B42919007D013B /* 优美口哨.wav in Resources */,
+				FB531C7120B428E4007D013B /* 滴滴哒哒.wav in Resources */,
 				FB702D7F20AFE9A1000E575B /* AddMemoView.xib in Resources */,
+				FB531C7920B4292B007D013B /* 吓死寡人.wav in Resources */,
+				FB531C6F20B428C7007D013B /* 非常有趣.wav in Resources */,
+				FB531C6320B426DA007D013B /* 震耳欲聋.wav in Resources */,
 				FB702DA020B2B335000E575B /* EventCell.xib in Resources */,
 				FBF12DA920AD90B1006194C6 /* Main.storyboard in Resources */,
+				FB531C6520B4286B007D013B /* 屋内听雨.wav in Resources */,
+				FB531C7520B428FF007D013B /* 穿透力.wav in Resources */,
+				FB531C7320B428F4007D013B /* 大喇叭.wav in Resources */,
+				FB531C6D20B428B9007D013B /* 人间仙境.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +604,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DDMemo/Pods-DDMemo-resources.sh",
+				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
@@ -519,6 +625,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB702DE420B2BE2C000E575B /* TodayViewController.m in Sources */,
+				FB67531620B54F0F00FEBF13 /* Memo+CoreDataClass.m in Sources */,
+				FB67530820B54C8600FEBF13 /* DDMemo.xcdatamodeld in Sources */,
+				FB67531520B54F0C00FEBF13 /* Memo+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,9 +640,11 @@
 				FB702D8220AFEB26000E575B /* NSObject+Initializtion.m in Sources */,
 				FB702D3F20AE7B0B000E575B /* DDCalendarAppearance.m in Sources */,
 				FB702D4620AE7F83000E575B /* DDCalendarScrollView.m in Sources */,
+				FB67531320B54E0300FEBF13 /* Memo+CoreDataProperties.m in Sources */,
 				FB702D9B20B2A58C000E575B /* UIBarButtonItem+Extension.m in Sources */,
 				FB702D5820AE8453000E575B /* DDCircleView.m in Sources */,
 				FB702D4F20AE7FEE000E575B /* DDCalendarCollectionCell.m in Sources */,
+				FB67531420B54E0300FEBF13 /* Memo+CoreDataClass.m in Sources */,
 				FB702D3920AE6BA1000E575B /* BaseViewController.m in Sources */,
 				FB702D4320AE7F53000E575B /* DDCalendarManager.m in Sources */,
 				FB702D3A20AE6BA1000E575B /* BaseNavController.m in Sources */,
@@ -541,6 +652,8 @@
 				FB702D5520AE80AD000E575B /* DDCalendarWeekDayView.m in Sources */,
 				FB702D8520AFEB8B000E575B /* UIView+Category.m in Sources */,
 				FB702D4920AE7FA2000E575B /* DDCalendarContentView.m in Sources */,
+				FB531C5F20B41693007D013B /* NSDate+Extension.m in Sources */,
+				FB531C4F20B3C16E007D013B /* NSString+Extension.m in Sources */,
 				FB702D7D20AFE99A000E575B /* AddMemoView.m in Sources */,
 				FBF12DAC20AD90B1006194C6 /* DDMemo.xcdatamodeld in Sources */,
 				FB702D5220AE8006000E575B /* DDCalendarDayItem.m in Sources */,
@@ -561,14 +674,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB702DE520B2BE2C000E575B /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB702DE620B2BE2C000E575B /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
 		FBF12DA720AD90B1006194C6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -591,12 +696,17 @@
 		FB702DED20B2BE2C000E575B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = DDMemoWiget/DDMemoWiget.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8L4W5XFHVG;
 				INFOPLIST_FILE = DDMemoWiget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dys.ddmemo.DDMemoWiget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6d14221c-1de4-41c1-8448-5451ea97cf79";
+				PROVISIONING_PROFILE_SPECIFIER = ddmemoWidget_dev;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,12 +715,18 @@
 		FB702DEE20B2BE2C000E575B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = DDMemoWiget/DDMemoWiget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8L4W5XFHVG;
 				INFOPLIST_FILE = DDMemoWiget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dys.ddmemo.DDMemoWiget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e099129-1549-4894-b5fe-8bffffef295e";
+				PROVISIONING_PROFILE_SPECIFIER = ddmemoWiget_dis;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -725,15 +841,17 @@
 			baseConfigurationReference = D87CFA456EA7A0EAF805F15A /* Pods-DDMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DDMemo/DDMemo.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8L4W5XFHVG;
 				GCC_PREFIX_HEADER = DDMemo/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = DDMemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dys.ddmemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "06370a6d-d03d-4671-819a-d5bc9d96502d";
+				PROVISIONING_PROFILE_SPECIFIER = ddmemo_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -743,15 +861,18 @@
 			baseConfigurationReference = 0E310246520CF9CC39468F27 /* Pods-DDMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DDMemo/DDMemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8L4W5XFHVG;
 				GCC_PREFIX_HEADER = DDMemo/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = DDMemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dys.ddmemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "06c67d4e-59e9-4ec8-8148-9f75e8c879fe";
+				PROVISIONING_PROFILE_SPECIFIER = ddmemo_dis;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
